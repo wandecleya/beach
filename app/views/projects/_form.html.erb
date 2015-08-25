@@ -18,8 +18,36 @@
     <%= f.text_field :name, :class=>'form-control' %>
   </div>
   <div class="field form-group">
+    <%= f.label :status %><br>
+    <%= f.text_field :status, :list => 'status', :class=>'form-control' %>
+    <datalist id="status">
+      <option value="Development">
+      <option value="Production">
+     </datalist>
+  </div>
+  <div class="field form-group">
     <%= f.label :description %><br>
     <%= f.text_area :description, :class=>'form-control', :rows=>'4' %>
+  </div>
+  <div class="field form-group">
+    <%= f.label :technologies %><br>
+    <%= f.text_area :technologies, :class=>'form-control', :rows=>'2' %>
+  </div>
+  <div class="field form-group">
+    <%= f.label :email %><br>
+    <%= f.text_field :email, :class=>'form-control' %>
+  </div>
+  <div class="field form-group">
+    <%= f.label "Link to Production" %><br>
+    <%= f.text_field :production, :class=>'form-control' %>
+  </div>
+  <div class="field form-group">
+    <%= f.label :repository %><br>
+    <%= f.text_field :repository, :class=>'form-control' %>
+  </div>
+    <div class="field form-group">
+    <%= f.label "Project Management System" %><br>
+    <%= f.text_field :management, :class=>'form-control' %>
   </div>
   <div class="field form-group">
     <%= f.label :picture %><br>
