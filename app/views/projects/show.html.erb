@@ -10,7 +10,7 @@
   <div class="col-md-6">
     <p><h3><%= @project.name %></h3></p>
     <p><b>Status: </b><%= @project.status %></p>
-    <p><b>In production: </b><%= @project.production if @project.production.present? %></p>
+    <p><b>Project in Production: </b><%= @project.production if @project.production.present? %></p>
     <p><b>Description: </b><%= @project.description %></p>
     <p><b>Technologies: </b><%= @project.technologies %></p>
     <p><b>Contact: </b><%= @project.email  %></p>

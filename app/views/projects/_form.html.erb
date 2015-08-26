@@ -19,11 +19,8 @@
   </div>
   <div class="field form-group">
     <%= f.label :status %><br>
-    <%= f.text_field :status, :list => 'status', :class=>'form-control' %>
-    <datalist id="status">
-      <option value="Development">
-      <option value="Production">
-     </datalist>
+    <%= f.select :status, ['In Development', 'Finished'], :class=>'form-control' %>
+
   </div>
   <div class="field form-group">
     <%= f.label :description %><br>
